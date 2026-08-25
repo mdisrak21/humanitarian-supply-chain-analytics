@@ -1,192 +1,149 @@
-# Humanitarian Supply Chain & Aid Distribution Analytics
+# 📦 Humanitarian Supply Chain & Aid Distribution Analytics
 
-A Streamlit-based humanitarian logistics and aid distribution analytics system designed to monitor relief inventory, shipments, distribution activities, supply gaps, and beneficiary reach.
+An interactive humanitarian supply chain and aid distribution analytics dashboard built with Python and Streamlit.
 
 ## 🚀 Live Demo
 
-[Open Live Demo](https://humanitarian-supply-chain-analytics.streamlit.app/)
+👉 https://humanitarian-supply-chain-analytics.streamlit.app/
 
-## 📂 GitHub Repository
+## 📸 Dashboard Preview
 
-[View Source Code](https://github.com/mdisrak21/humanitarian-supply-chain-analytics)
+![Humanitarian Supply Chain & Aid Distribution Analytics](dashboard.PNG)
 
-## 📊 Dashboard Preview
+## 📌 Project Overview
 
-![Humanitarian Supply Chain Analytics Dashboard](dashboard.PNG)
+This project is a humanitarian supply chain and aid distribution analytics dashboard designed to support data-driven decision-making in humanitarian logistics and relief operations.
 
-## 🎯 Project Objectives
+The system allows users to monitor humanitarian aid inventory, track shipments, identify supply gaps, monitor distribution activities, analyze beneficiary reach, and generate operational reports.
 
-* Monitor humanitarian aid inventory
-* Identify low-stock and supply-gap items
-* Track humanitarian shipments
-* Monitor aid distribution activities
-* Analyze beneficiaries and households reached
-* Compare humanitarian performance across districts
-* Generate downloadable operational reports
+The project uses synthetic data for educational and portfolio purposes.
 
-## ✨ Key Features
+## 🎯 Objectives
+
+- Monitor humanitarian aid inventory across warehouses
+- Identify low-stock and potential supply-gap items
+- Track humanitarian shipments and delivery status
+- Monitor aid distribution across different districts
+- Track households and beneficiaries reached
+- Analyze district-level distribution performance
+- Generate downloadable operational reports
+- Demonstrate humanitarian logistics data analysis and visualization
+
+## 📊 Key Features
 
 ### 📦 Inventory Management
 
-* Aid item tracking
-* Warehouse-level inventory monitoring
-* Minimum stock threshold monitoring
-* Low-stock identification
-* Supply gap calculation
+- Add and manage humanitarian aid inventory
+- Monitor warehouse-level stock
+- Define minimum stock thresholds
+- Identify low-stock items
+- Calculate supply gaps
+- Analyze inventory by aid category
 
 ### 🚚 Shipment Tracking
 
-* Shipment registration
-* Origin and destination tracking
-* Dispatch and expected delivery dates
-* Shipment status monitoring
-* Delivered and in-transit shipment analysis
+- Add new shipment records
+- Track shipment origin and destination
+- Record dispatch and expected delivery dates
+- Monitor shipment status
+- Identify delivered and active shipments
+- Filter shipments by status
 
 ### 📍 Distribution Monitoring
 
-* District-level distribution records
-* Distribution center monitoring
-* Household reach tracking
-* Beneficiary reach tracking
-* Distributed quantity analysis
+- Add humanitarian distribution records
+- Monitor distribution centers
+- Track district-level aid distribution
+- Record households reached
+- Record beneficiaries reached
+- Analyze distributed quantities
 
-### ⚠️ Supply Gap Detection
+### ⚠️ Supply Gap Analysis
 
-The system automatically identifies items where the current stock falls below the defined minimum stock level.
-
-This helps highlight potential shortages that may require replenishment or operational attention.
-
-### 📊 Analytics Dashboard
-
-The dashboard provides an overview of:
-
-* Inventory levels
-* Low-stock items
-* Active shipments
-* Shipment status
-* Beneficiaries reached
-* Distribution performance
-* District-level humanitarian activities
+- Automatically identify items below minimum stock
+- Calculate stock gaps
+- Highlight potential humanitarian supply shortages
+- Support operational replenishment decisions
 
 ### 📑 Reporting
 
-Users can view operational reports and download them as CSV files for further analysis and documentation.
+- Generate inventory reports
+- Generate shipment reports
+- Generate distribution reports
+- Generate district-level performance reports
+- Download reports as CSV files
 
-## 🛠️ Technology Stack
+## 🛠️ Technologies Used
 
-* **Python**
-* **Streamlit**
-* **Pandas**
-* **Plotly**
-* **SQLite**
+- Python
+- Streamlit
+- Pandas
+- Plotly
+- SQLite
+- Git & GitHub
 
-## 🗂️ Project Structure
+## 🗄️ Database
+
+The application uses SQLite for local data storage.
+
+Main database entities:
+
+`aid_inventory`
+
+`shipments`
+
+`distributions`
+
+The database stores:
+
+### Aid Inventory
+
+- Item name
+- Aid category
+- Warehouse
+- Quantity
+- Minimum stock level
+- Unit
+- Updated date
+
+### Shipments
+
+- Shipment code
+- Item name
+- Origin
+- Destination
+- Quantity
+- Dispatch date
+- Expected delivery date
+- Shipment status
+
+### Distributions
+
+- Distribution date
+- District
+- Distribution center
+- Item name
+- Distributed quantity
+- Households reached
+- Beneficiaries reached
+
+## 🔄 Data Workflow
 
 ```text
-humanitarian-supply-chain-analytics/
-│
-├── app.py
-├── database.py
-├── requirements.txt
-├── dashboard.PNG
-├── README.md
-├── .gitignore
-└── humanitarian_supply_chain.db
-```
-
-## ▶️ Run Locally
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/mdisrak21/humanitarian-supply-chain-analytics.git
-```
-
-### 2. Navigate to the project directory
-
-```bash
-cd humanitarian-supply-chain-analytics
-```
-
-### 3. Create a virtual environment
-
-```bash
-python -m venv venv
-```
-
-### 4. Activate the virtual environment on Windows
-
-```powershell
-.\venv\Scripts\Activate.ps1
-```
-
-### 5. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 6. Run the application
-
-```bash
-streamlit run app.py
-```
-
-The application will open in your browser.
-
-## 📌 Data
-
-This project uses **synthetic humanitarian operational data** for demonstration and portfolio purposes.
-
-It does not contain real beneficiary information, personally identifiable information, or confidential humanitarian data.
-
-## 🌍 Humanitarian Relevance
-
-Humanitarian organizations operate complex systems involving inventory, logistics, distribution, and beneficiary support.
-
-This project demonstrates how data analytics can help improve operational visibility by connecting:
-
-**Inventory → Shipments → Distribution → Beneficiaries → Supply Gaps**
-
-The system can support decision-making around:
-
-* Relief stock monitoring
-* Shipment tracking
-* Distribution planning
-* Supply shortage identification
-* District-level performance monitoring
-* Operational reporting
-
-## 🎓 Skills Demonstrated
-
-* Python application development
-* Streamlit dashboard development
-* SQLite database design
-* CRUD-style data management
-* Data analysis with Pandas
-* Interactive visualization with Plotly
-* Humanitarian logistics analytics
-* Supply gap monitoring
-* Operational reporting
-* Data-driven decision support
-
-## 🔐 Privacy & Security
-
-This project is designed for demonstration purposes using synthetic data.
-
-No real beneficiary records or sensitive personal information are included.
-
-## 👤 Author
-
-**Md Israk**
-
-GitHub:
-https://github.com/mdisrak21
-
-## 📄 License
-
-This project is intended for educational, portfolio, and demonstration purposes.
-
----
-
-Built as a portfolio project focused on humanitarian data analytics, supply chain monitoring, operational visibility, and decision support.
+Aid Inventory
+       ↓
+SQLite Database
+       ↓
+Shipment Tracking
+       ↓
+Data Processing with Pandas
+       ↓
+Supply Gap Analysis
+       ↓
+Distribution Monitoring
+       ↓
+Beneficiary Reach Analysis
+       ↓
+Interactive Dashboard
+       ↓
+Reports & CSV Export
