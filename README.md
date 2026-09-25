@@ -147,3 +147,21 @@ Beneficiary Reach Analysis
 Interactive Dashboard
        ↓
 Reports & CSV Export
+
+```
+
+## ⚙️ Installation & Usage
+
+```bash
+git clone https://github.com/mdisrak21/humanitarian-supply-chain-analytics.git
+cd humanitarian-supply-chain-analytics
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## 🔮 Future Improvements
+
+- Add route optimization.
+- Add stock-out alerts.
+- Add geographic supply chain maps.
+- Add delivery performance forecasting.
